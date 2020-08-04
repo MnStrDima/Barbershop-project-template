@@ -3,12 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Barbershop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
 
+  <body>
+    <!-- Header -->
+    <include src="./partials/header.html"></include>
+
+    <main>
+      <!-- Hero section -->
+      <include src="./partials/hero.html"></include>
+
+      <!-- About us section -->
+      <include src="./partials/aboutus.html"></include>
+
+      <!-- Our prices section -->
+      <include src="./partials/services&prices.html"></include>
+
+      <!-- Our advantages section -->
+      <include src="./partials/advantages.html"></include>
+
+      <!-- Our team section -->
+      <include src="./partials/team.html"></include>
+
+      <!-- Our works section -->
+      <include src="./partials/gallery.html"></include>
+    </main>
+
+    <!-- Contacts section -->
+    <include src="./partials/submition&contacts.html"></include>
+
+    <!-- Footer -->
+    <include src="./partials/footer.html"></include>
+
+    <!-- Скрипт для меню-бургера. -->
+    <script src="./js/menu.js"></script>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
