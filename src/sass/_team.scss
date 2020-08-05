@@ -32,7 +32,11 @@
 }
 
 .team-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 64px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .item-title {
