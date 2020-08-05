@@ -1,0 +1,71 @@
+.our-team {
+  background-color: $additional-bg-color;
+  color: $forth-text-color;
+
+  .section-description {
+    @extend %section-description;
+    font-weight: 600;
+
+    &::before {
+      width: 60px;
+      height: 1px;
+      background-image: url(../images/icons.svg#line);
+      fill: transparent;
+    }
+  }
+
+  .section-title {
+    @extend %section-title;
+    padding-top: 20px;
+    padding-bottom: 44px;
+  }
+}
+
+.team-list {
+  @extend %list;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-title {
+  padding-top: 30px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.item-description {
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: $accent-color;
+}
+
+.social-list {
+  @extend %list;
+  @extend %centred-items;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+
+  &:hover .social-logo {
+    fill: $accent-color;
+  }
+}
+
+.my {
+  outline: 1px solid tomato;
+}

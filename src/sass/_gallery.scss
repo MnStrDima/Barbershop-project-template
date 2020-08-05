@@ -1,0 +1,63 @@
+.section-description {
+  margin-bottom: 44px;
+  line-height: 21px;
+  //line-height: 1,9;
+  color: $forth-text-color;
+
+  &::before {
+    width: 60px;
+    height: 1px;
+    background-image: url(../images/icons.svg#line);
+    fill: $forth-text-color;
+  }
+}
+
+.our-works-list {
+  @extend %list;
+
+  li:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  & .my {
+    background-color: turquoise;
+    width: 418px;
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-works-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    & .my {
+      width: 330px;
+      height: 360px;
+    }
+  }
+
+  li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  li:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-works-list {
+    flex-wrap: nowrap;
+
+    & .my {
+      width: 270px;
+      height: 360px;
+    }
+  }
+
+  li {
+    margin-bottom: 0;
+  }
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
