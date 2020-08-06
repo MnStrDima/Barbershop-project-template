@@ -24,7 +24,7 @@
 .team-list {
   @extend %list;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -33,7 +33,7 @@
 
 .team-item:not(:last-child) {
   margin-bottom: 64px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-right: 30px;
     margin-bottom: 0;
   }
@@ -62,8 +62,13 @@
   @extend %centred-items;
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10px;
+.social-item {
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
 
   &:hover .social-logo {
     fill: $accent-color;
