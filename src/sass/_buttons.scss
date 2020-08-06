@@ -27,7 +27,8 @@
   &.light {
     color: #303030;
   }
-  &.main {
+  &:hover,
+  &:focus {
     background-color: #ff6c00;
   }
 }
