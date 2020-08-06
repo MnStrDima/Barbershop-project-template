@@ -1,15 +1,22 @@
+.no-scroll {
+  overflow: hidden;
+  width: 100%;
+}
 .container {
   padding: 0px 31px;
   margin: 0 auto;
+
   .page-header & {
-    height: 136px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
-    align-items: center;
-    @media screen and (min-width: 768px) {
-      height: 156px;
-      justify-content: space-between;
+    justify-content: space-between;
+
+    @media screen and(max-width: 767px) {
+      align-items: center;
     }
   }
+
   @media screen and (min-width: 480px) {
     max-width: 480px;
   }
@@ -18,8 +25,20 @@
     max-width: 768px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     max-width: 1200px;
-    padding: 0px 55px;
+    padding: 0px 15px;
+  }
+
+  .page-footer & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    @media screen and (max-width: 480px) {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
   }
 }
