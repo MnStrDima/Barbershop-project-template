@@ -1,30 +1,30 @@
 .our-prices .container {
   padding: 84px 31px;
   background-color: $prices-bg-color;
-  background-image: url('../images/Ourprices/bgimage-prices-mobile.jpg');
+  background-image: url('../images/Ourprices/bgimage-prices-mobile.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url('../images/Ourprices/bgimage-prices-mobile@2x.jpg');
+    background-image: url('../images/Ourprices/bgimage-prices-mobile@2x.png');
   }
 
   @media screen and (min-width: $tablet) {
     padding: 100px 39px;
-    background-image: url('../images/Ourprices/bgimage-prices-tablet.jpg');
+    background-image: url('../images/Ourprices/bgimage-prices-tablet.png');
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/Ourprices/bgimage-prices-tablet@2x.jpg');
+      background-image: url('../images/Ourprices/bgimage-prices-tablet@2x.png');
     }
   }
 
   @media screen and (min-width: $desktop) {
     padding: 130px 55px;
-    background-image: url('../images/Ourprices/bgimage-prices-desktop.jpg');
+    background-image: url('../images/Ourprices/bgimage-prices-desktop.png');
 
     @media screen and (min-resolution: 2dppx) {
-      background-image: url('../images/Ourprices/bgimage-prices-desktop@2x.jpg');
+      background-image: url('../images/Ourprices/bgimage-prices-desktop@2x.png');
     }
   }
 }
