@@ -1,10 +1,32 @@
 .our-prices .container {
   padding: 84px 31px;
   background-color: $prices-bg-color;
-  background-image: url('../images/Ourprices/bgimage-prices.png');
+  background-image: url('../images/Ourprices/bgimage-prices-mobile.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url('../images/Ourprices/bgimage-prices-mobile@2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 100px 39px;
+    background-image: url('../images/Ourprices/bgimage-prices-tablet.jpg');
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/Ourprices/bgimage-prices-tablet@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 130px 55px;
+    background-image: url('../images/Ourprices/bgimage-prices-desktop.jpg');
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/Ourprices/bgimage-prices-desktop@2x.jpg');
+    }
+  }
 }
 
 .our-prices .section-description {
@@ -44,6 +66,10 @@
   & .pricelist-item {
     margin-bottom: 20px;
   }
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 40px 0 40px;
+  }
 }
 
 .pricelist-second {
@@ -52,6 +78,10 @@
 
   & .pricelist-item:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 40px 30px 40px;
   }
 }
 
@@ -64,6 +94,11 @@
   line-height: 2.14;
   letter-spacing: 0.02em;
   color: $hero-description-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
 }
 
 .pricelist-line {
@@ -71,7 +106,7 @@
   height: 1px;
   margin: 0 6px;
   background-color: rgba(157, 164, 189, 0.12);
-  transform: translateY(4px);
+  transform: translateY(3px);
 }
 
 .pricelist-button {
@@ -79,4 +114,19 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: $desktop) {
+  .pricelist {
+    display: flex;
+  }
+
+  .pricelist-first,
+  .pricelist-second {
+    padding: 30px 40px;
+    width: 585px;
+  }
+  .pricelist-second {
+    background: $prices-list-additional-bg-color;
+  }
 }
