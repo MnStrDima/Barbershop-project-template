@@ -5,13 +5,17 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: $tablet-lower) {
     height: 680px;
   }
 }
 
 .hero-content {
-  margin-top: 232px;
+  margin-top: 208px;
+
+  @media screen and (min-width: $tablet-lower) {
+    margin-top: 272px;
+  }
 }
 
 .hero-description {
@@ -40,7 +44,7 @@
   color: #ffffff;
   margin-bottom: 20px;
 
-  @media screen and (max-width: $desktop-lower) {
+  @media screen and (max-width: $desktop-upper) {
     font-size: 48px;
     line-height: 1.16;
   }
@@ -51,37 +55,39 @@
   color: $hero-description-text-color;
 
   @media screen and (max-width: $mobile) {
-    width: 306px;
+    max-width: 306px;
     height: 78px;
   }
 
   @media screen and (min-width: $tablet-lower) {
-    width: 355px;
+    max-width: 355px;
     height: 52px;
   }
 
-  @media screen and (min-width: $desktop-lower) {
-    width: 486px;
+  @media screen and (min-width: $desktop-upper) {
+    max-width: 400px;
     height: 62px;
   }
 
-  @media screen and (max-width: $desktop-lower) {
+  @media screen and (max-width: $desktop-upper) {
     font-size: 16px;
     line-height: 1.62;
   }
 }
 
 .slider-position {
-  text-align: right;
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 5%;
+  transform: translateY(-50%);
   width: 18px;
   height: 30px;
   display: none;
 
   @media screen and (min-width: $tablet-lower) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .position {
@@ -90,7 +96,8 @@
     height: 2px;
     background-color: #9da4bd;
 
-    &.curent {
+    &:hover,
+    &:focus {
       width: 18px;
       background-color: #ffffff;
     }
@@ -116,13 +123,13 @@
 
   @media screen and (min-width: $tablet-lower) {
     display: flex;
-    margin-top: 47%;
+    margin-top: 40%;
     margin-left: 67%;
   }
 
   @media screen and (min-width: $desktop-upper) {
     display: flex;
-    margin-top: 19%;
+    margin-top: 15%;
     margin-left: 82%;
   }
 
@@ -132,6 +139,17 @@
     height: 24px;
     text-align: left;
     margin-right: 26px;
+
+    &:hover,
+    &:focus {
+      &::after {
+        content: '';
+        display: inline-block;
+        height: 1px;
+        width: 60px;
+        background-color: #ffffff;
+      }
+    }
 
     &::after {
       content: '';
@@ -147,6 +165,17 @@
     width: 60px;
     height: 24px;
     text-align: right;
+
+    &:hover,
+    &:focus {
+      &::after {
+        content: '';
+        display: inline-block;
+        height: 1px;
+        width: 60px;
+        background-color: #ffffff;
+      }
+    }
 
     &::after {
       content: '';
