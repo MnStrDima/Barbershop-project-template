@@ -1,0 +1,92 @@
+.our-team {
+  background-color: $additional-bg-color;
+  color: $forth-text-color;
+
+  .container {
+    position: relative;
+  }
+
+  .section-description {
+    @extend %section-description;
+    font-weight: 600;
+    margin-left: 80px;
+
+    &::before {
+      position: absolute;
+      top: 5px;
+      left: 31px;
+      content: '';
+      display: block;
+      margin-right: 20px;
+      width: 60px;
+      height: 1px;
+      background: rgba(157, 164, 189, 0.6);
+
+      @media screen and (min-width: 768px) {
+        left: 39px;
+      }
+      @media screen and (min-width: 1280px) {
+        left: 15px;
+      }
+    }
+  }
+
+  .section-title {
+    @extend %section-title;
+    padding-top: 20px;
+    padding-bottom: 44px;
+  }
+}
+
+.team-list {
+  @extend %list;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+.team-item:not(:last-child) {
+  margin-bottom: 64px;
+  @media screen and (min-width: 1280px) {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.item-title {
+  padding-top: 30px;
+  padding-bottom: 8px;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.item-description {
+  padding-bottom: 30px;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: $accent-color;
+}
+
+.social-list {
+  @extend %list;
+  @extend %centred-items;
+}
+
+.social-item {
+  height: 44px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+  &:hover .social-logo {
+    fill: $accent-color;
+  }
+}
