@@ -39,10 +39,12 @@
       padding: 0px 31px;
       width: 480px;
       height: 580px;
+      margin: 0 auto;
     }
 
     @media screen and (min-width: $tablet-lower) {
       height: 680px;
+      margin: 0 auto;
     }
 
     @media screen and (max-width: $tablet-upper) {
@@ -87,40 +89,38 @@
           ),
           url('../images/Hero/Sliderimg3@2x.jpg');
       }
-      padding-left: 120px;
+      padding-left: 24px;
       width: 609px;
     }
 
     @media screen and (min-width: $desktop-upper) {
       width: 1125px;
-      padding-left: 100px;
+      padding-left: 40px;
     }
   }
 
   .page-header & {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 32px 0px;
+
     display: flex;
     justify-content: space-between;
 
     @media screen and(max-width: $tablet-upper) {
       align-items: center;
     }
-
-    @media screen and (min-width: $desktop-lower) {
-    }
   }
 
   @media screen and (min-width: $mobile) {
     max-width: 480px;
   }
+
   @media screen and (min-width: $desktop-lower) {
     padding: 0px 39px;
     max-width: 768px;
   }
 
   @media screen and (min-width: $desktop-upper) {
-    max-width: 1200px;
+    max-width: 1280px;
     padding: 0px 15px;
   }
   .page-footer & {
@@ -129,7 +129,7 @@
     justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 56px;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: 480px) {
       padding-top: 44px;
       padding-bottom: 44px;
     }

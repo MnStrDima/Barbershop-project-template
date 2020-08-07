@@ -1,4 +1,5 @@
 .hero {
+  position: relative;
   display: flex;
   padding: 0;
   height: 580px;
@@ -7,14 +8,25 @@
 
   @media screen and (min-width: $tablet-lower) {
     height: 680px;
+    max-width: 768px;
+  }
+  @media screen and (min-width: $desktop-upper) {
+    max-width: 1280px;
+    display: flex;
   }
 }
 
 .hero-content {
-  margin-top: 208px;
+  margin-top: 130px;
 
-  @media screen and (min-width: $tablet-lower) {
-    margin-top: 272px;
+  @media screen and (min-width: $desktop-lower) {
+    margin-top: 135px;
+    margin-left: 96px;
+  }
+
+  @media screen and (min-width: $desktop-upper) {
+    margin-top: 160px;
+    margin-left: 60px;
   }
 }
 
@@ -44,7 +56,7 @@
   color: #ffffff;
   margin-bottom: 20px;
 
-  @media screen and (max-width: $desktop-upper) {
+  @media screen and (max-width: 1279px) {
     font-size: 48px;
     line-height: 1.16;
   }
@@ -84,7 +96,7 @@
   height: 30px;
   display: none;
 
-  @media screen and (min-width: $tablet-lower) {
+  @media screen and (min-width: $tablet-upper) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -121,16 +133,16 @@
     color: #ffffff;
   }
 
-  @media screen and (min-width: $tablet-lower) {
+  @media screen and (min-width: $desktop-lower) {
     display: flex;
-    margin-top: 40%;
-    margin-left: 67%;
+    margin-top: 32%;
+    margin-left: 73%;
   }
 
   @media screen and (min-width: $desktop-upper) {
     display: flex;
-    margin-top: 15%;
-    margin-left: 82%;
+    margin-top: 14%;
+    margin-left: 83%;
   }
 
   &-previous {
@@ -192,13 +204,18 @@
 .hero-aside {
   width: 159px;
   background-color: $main-bg-color;
+  text-align: center;
+
+  padding: 32px 30px 40px 39px;
 
   @media screen and(max-width: 767px) {
     display: none;
   }
   @media screen and(min-width: 1200px) {
     width: 155px;
+    padding: 32px 31px 40px 55px;
   }
+
   .aside-list {
     @extend %list;
 
