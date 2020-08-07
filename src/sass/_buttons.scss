@@ -1,0 +1,35 @@
+.button {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  width: 160px;
+  height: 40px;
+
+  margin: 0;
+  padding: 12px 18px;
+
+  color: $third-text-color;
+  border: 1px solid $accent-color;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-radius: 25px;
+  cursor: pointer;
+
+  .menu & {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 194px;
+      padding: 12px 35px;
+    }
+  }
+  &.light {
+    color: $forth-text-color;
+  }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

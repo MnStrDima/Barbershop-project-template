@@ -1,0 +1,39 @@
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+%centred-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Размеры шрифтов под десктоп!
+Мод остальные девайсы надо смотреть*/
+%section-description {
+  font-size: 11px;
+  line-height: 1.36;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+%section-title {
+  font-family: $secondary-font-family;
+  font-size: 42px;
+  line-height: 1.67;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+%description-text {
+  font-size: 18px;
+  line-height: 1.67;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+%description-subtext {
+  font-size: 14px;
+  line-height: 1.86;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
