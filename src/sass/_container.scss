@@ -105,22 +105,22 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and(max-width: $tablet-upper) {
+    @media screen and(max-width: 767px) {
       align-items: center;
     }
   }
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 480px) {
     max-width: 480px;
   }
 
-  @media screen and (min-width: $desktop-lower) {
+  @media screen and (min-width: 768px) {
     padding: 0px 39px;
     max-width: 768px;
   }
-
-  @media screen and (min-width: $desktop-upper) {
-    max-width: 1280px;
+  
+  @media screen and (min-width: 1280px) {
+    max-width: 1200px;
     padding: 0px 15px;
   }
   .page-footer & {

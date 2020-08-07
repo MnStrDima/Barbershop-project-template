@@ -6,11 +6,11 @@
   max-width: 1280px;
   margin: 0 auto;
 
-  @media screen and (min-width: $tablet-lower) {
+  @media screen and (min-width: 481px) {
     height: 680px;
     max-width: 768px;
   }
-  @media screen and (min-width: $desktop-upper) {
+  @media screen and (min-width: 1280px) {
     max-width: 1280px;
     display: flex;
   }
@@ -19,12 +19,12 @@
 .hero-content {
   margin-top: 130px;
 
-  @media screen and (min-width: $desktop-lower) {
+  @media screen and (min-width: 768px) {
     margin-top: 135px;
     margin-left: 96px;
   }
 
-  @media screen and (min-width: $desktop-upper) {
+  @media screen and (min-width: 1280px) {
     margin-top: 160px;
     margin-left: 60px;
   }
@@ -66,22 +66,22 @@
   @extend %description-text;
   color: $hero-description-text-color;
 
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: 480px) {
     max-width: 306px;
     height: 78px;
   }
 
-  @media screen and (min-width: $tablet-lower) {
+  @media screen and (min-width: 481px) {
     max-width: 355px;
     height: 52px;
   }
 
-  @media screen and (min-width: $desktop-upper) {
+  @media screen and (min-width: 1280px) {
     max-width: 400px;
     height: 62px;
   }
 
-  @media screen and (max-width: $desktop-upper) {
+  @media screen and (max-width: 1280px) {
     font-size: 16px;
     line-height: 1.62;
   }
@@ -96,7 +96,7 @@
   height: 30px;
   display: none;
 
-  @media screen and (min-width: $tablet-upper) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -133,13 +133,13 @@
     color: #ffffff;
   }
 
-  @media screen and (min-width: $desktop-lower) {
+  @media screen and (min-width: 768px) {
     display: flex;
     margin-top: 32%;
     margin-left: 73%;
   }
 
-  @media screen and (min-width: $desktop-upper) {
+  @media screen and (min-width: 1280px) {
     display: flex;
     margin-top: 14%;
     margin-left: 83%;
@@ -220,8 +220,7 @@
     @extend %list;
 
     position: relative;
-    top: 85%;
-
+    top: 79%;
     line-height: 1.36;
     letter-spacing: 0.2em;
     font-size: 11px;
@@ -234,17 +233,6 @@
       transform: rotate(-90deg);
       padding-left: 40px;
     }
-
-    // &:before {
-    //   content: '';
-    //   display: block;
-    //   background-image: url('../../../images/svg/line.svg');
-    //   //   background-color: $forth-text-color;
-    //   width: 60px;
-    //   height: 1px;
-    //   margin-right: 40px;
-    //   transform: rotate(-90deg);
-    // }
 
     &-item {
       a {
