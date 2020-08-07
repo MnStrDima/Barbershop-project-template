@@ -14,7 +14,7 @@
 
   &::before {
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 31px;
     content: '';
     display: block;
@@ -27,7 +27,7 @@
       left: 39px;
     }
     @media screen and (min-width: 1280px) {
-      left: 55px;
+      left: 15px;
     }
   }
 }
@@ -38,46 +38,37 @@
   li:not(:last-child) {
     margin-bottom: 30px;
   }
-  & .my {
-    background-color: turquoise;
-    width: 418px;
-    height: 360px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .our-works-list {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
 
+    li:not(:last-child) {
+      margin-bottom: 0px;
+    }
+    li:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    li:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
     & .my {
       width: 330px;
       height: 360px;
     }
   }
 
-  li:nth-child(2n + 1) {
-    margin-right: 30px;
-  }
-  li:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .our-works-list {
+  @media screen and (min-width: 1280px) {
     flex-wrap: nowrap;
+
+    li:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
 
     & .my {
       width: 270px;
       height: 360px;
     }
-  }
-
-  li {
-    margin-bottom: 0;
-  }
-  li:not(:last-child) {
-    margin-right: 30px;
   }
 }
