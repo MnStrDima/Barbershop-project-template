@@ -12,23 +12,30 @@
   margin: 0;
   padding: 12px 18px;
 
-  color: #ffffff;
-  border: 1px solid #ff6c00;
+  color: $third-text-color;
+  border: 1px solid $accent-color;
   background-color: transparent;
   box-sizing: border-box;
   border-radius: 25px;
   cursor: pointer;
   .menu & {
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
       width: 194px;
       padding: 12px 35px;
     }
   }
   &.light {
-    color: #303030;
+    color: $forth-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $third-text-color;
+    }
   }
+
   &:hover,
   &:focus {
-    background-color: #ff6c00;
+    background-color: $accent-color;
   }
 }
