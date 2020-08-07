@@ -52,10 +52,6 @@
     li:nth-child(-n + 2) {
       margin-bottom: 30px;
     }
-    & .my {
-      width: 330px;
-      height: 360px;
-    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -64,11 +60,6 @@
     li:not(:last-child) {
       margin-right: 30px;
       margin-bottom: 0;
-    }
-
-    & .my {
-      width: 270px;
-      height: 360px;
     }
   }
 }
