@@ -1,5 +1,6 @@
 .container {
-    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding-right: 0;
     padding-left: 0;
 }
@@ -9,8 +10,8 @@
     background-color: #191C26;
     width: 100%;
     height: 557px;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 13%;
+    padding-right: 13%;
 
     .signup-title {
         padding-top: 84px;
@@ -24,57 +25,57 @@
         text-align: center;
         letter-spacing: 0.05em;
 
-        color: #FFFFFF;
+        color: $third-text-color;
     }
-       .form-input {
-            width: 100%;
-            margin-bottom: 44px;
-            padding-bottom: 8px;
+    .form-input {
+        width: 100%;
+        margin-bottom: 44px;
+        padding-bottom: 8px;
+        border-top: 0;
+        border-right: 0;
+        border-left: 0;
+        border-bottom: 1px ridge rgba(157, 164, 189, 0.4);
+        background:  #191C26;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;;
             border-top: 0;
             border-right: 0;
-            border-left: 0;
-            border-bottom: 1px ridge rgba(157, 164, 189, 0.4);
-            background:  #191C26;
+            border-bottom: 1px ridge #FFFFFF;
+            outline: none;
+            color:  #FFFFFF;
+        }
+    }
 
-            &:hover,
-            &:focus {
-                cursor: pointer;;
-                border-top: 0;
-                border-right: 0;
-                border-bottom: 1px ridge #FFFFFF;
-                outline: none;
-                color:  #FFFFFF;
-            }
-       }
+    .button {
+        margin-top: 44px;
+        display: block;
+        margin: 0 auto; 
 
-       .button {
-           margin-top: 44px;
-           display: block;
-           margin: 0 auto; 
-
-           &:focus,
-           &:hover {
-             background:#ff6c00; 
-           }
-       }
+        &:focus,
+        &:hover {
+            background:#ff6c00; 
+        }
+    }
 }
 
 .form-input {
-        &::placeholder {
-            
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 11px;
-            line-height: 1.4;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: rgba(157, 164, 189, 0.4);
-        }
+    &::placeholder {
+        
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 1.4;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: rgba(157, 164, 189, 0.4);
+    }
 
-        &.user-comment {
-            resize: none;
-        } 
+    &.user-comment {
+        resize: none;
+    } 
 }
 
 .form-input:focus,
@@ -98,16 +99,16 @@
     height: 496px;
     padding-top: 84px;
     padding-bottom: 84px;
-    padding-left: 31px;
-    padding-right: 31px;
+    padding-left: 13%;
+    padding-right: 13%;
     
-    background-image: //url('../images/contacts.jpg'),
-    linear-gradient(to right,rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8));
+    background-color: #191C26;
+    background-image: url('../images/contacts.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     
-    .communication-title {
+    &-title {
         padding-bottom: 45px;
 
         font-family: Raleway;
@@ -136,12 +137,11 @@
             letter-spacing: 0.02em;
             color: #9DA4BD;
 
-                &:nth-child(3n) {
+            &:nth-child(3n) {
                 margin-right: 0;
-                }  
+            }  
         }
     }
-
 }
 
 .contacts-list-item {
@@ -155,11 +155,13 @@
         &:focus,
         &:hover {
             color: white;
-             --color1: white;
+            --color1: white;
         }
     }
 
     .icon {
+        position: relative;
+        top: 5px;
         height: 24px;
         width: 24px;
         margin-right: 5px;
@@ -180,19 +182,17 @@
         line-height: 1.4;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-
         color: #FFFFFF;   
-
-            &::before {
-                content: "";
-                position: absolute;
-                left: -75px;
-                top: 50%;
-                display: inline-block;
-                height: 1px;
-                width: 60px;
-                background-color: rgba(157, 164, 189, 0.6);
-            }
+        &::before {
+            content: "";
+            position: absolute;
+            left: -75px;
+            top: 50%;
+            display: inline-block;
+            height: 1px;
+            width: 60px;
+            background-color: rgba(157, 164, 189, 0.6);
+        }
     }
 
     &-details {
@@ -204,5 +204,53 @@
         letter-spacing: 0.02em;
 
         color: #9DA4BD;
+    }
+}
+
+@media screen  and (min-width: 481px) {
+    .signup-form {
+        .signup-title {
+            text-align: left;
+        }
+    }
+
+    .subscription-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .form-input {
+            width: calc(50% - 15px);
+
+            &.user-comment {
+                width: 100%;
+            }
+        }
+
+        .button {
+            margin: 0; 
+        }
+    }
+
+    .communication {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+
+        &-title {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    .contacts-list {
+        width: calc(50% - 50px);
+    }
+
+    .schedule {
+        width: calc(50% - 50px);
+        margin-top: 20px;
     }
 }
