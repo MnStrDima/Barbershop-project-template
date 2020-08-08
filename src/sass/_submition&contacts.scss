@@ -34,7 +34,7 @@
         border-top: 0;
         border-right: 0;
         border-left: 0;
-        border-bottom: 1px ridge rgba(157, 164, 189, 0.4);
+        border-bottom: 1px ridge $sixth-text-color;
         background:  #191C26;
 
         &:hover,
@@ -42,9 +42,9 @@
             cursor: pointer;;
             border-top: 0;
             border-right: 0;
-            border-bottom: 1px ridge #FFFFFF;
+            border-bottom: 1px ridge $main-bg-color;
             outline: none;
-            color:  #FFFFFF;
+            color:  $third-text-color;
         }
     }
 
@@ -55,7 +55,7 @@
 
         &:focus,
         &:hover {
-            background:#ff6c00; 
+            background:$accent-color; 
         }
     }
 }
@@ -70,7 +70,7 @@
         line-height: 1.4;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: rgba(157, 164, 189, 0.4);
+        color: $sixth-text-color;
     }
 
     &.user-comment {
@@ -81,14 +81,14 @@
 .form-input:focus,
 .form-input:hover {
     &::placeholder {
-        color: #FFFFFF;;
+        color: $third-text-color;
     }
 }
 
 .form-input {
     &:not(:focus) {
         &:not(:placeholder-shown) {
-            color: #FFFFFF;;
+            color: $third-text-color;
         }
     }
 }
@@ -119,7 +119,7 @@
         text-align: center;
         letter-spacing: 0.05em;
 
-        color: #FFFFFF;
+        color: $third-text-color;
     }
 
     .contacts-list {
@@ -135,10 +135,10 @@
             font-size: 18px;
             line-height: 1.7;
             letter-spacing: 0.02em;
-            color: #9DA4BD;
+            color: $secondary-text-color;
 
             &:nth-child(3n) {
-                margin-right: 0;
+                    margin-right: 0;
             }  
         }
     }
@@ -146,7 +146,7 @@
 
 .contacts-list-item {
     a {
-        color: #9DA4BD;
+        color: $secondary-text-color;
 
         &.email {
             text-decoration: underline;
@@ -154,8 +154,8 @@
 
         &:focus,
         &:hover {
-            color: white;
-            --color1: white;
+            color: $third-text-color;
+            --color1: $third-text-color;
         }
     }
 
@@ -182,7 +182,7 @@
         line-height: 1.4;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #FFFFFF;   
+        color: $third-text-color;   
         &::before {
             content: "";
             position: absolute;
@@ -191,7 +191,7 @@
             display: inline-block;
             height: 1px;
             width: 60px;
-            background-color: rgba(157, 164, 189, 0.6);
+            background-color: $hero-section-description-color;
         }
     }
 
@@ -203,7 +203,7 @@
         line-height: 1.7;
         letter-spacing: 0.02em;
 
-        color: #9DA4BD;
+        color: $secondary-text-color;
     }
 }
 
@@ -263,19 +263,22 @@
         padding-top: 130px;
     }
 
+    .communication-title {
+        padding-bottom: 0;
+    }
+    
     .signup-form,
     .communication {
         width: 50%; 
         height: 644px;
-        padding-left: 4%;
-        padding-right: 4%;
+        padding-left: 7%;
+        padding-right: 3%;
     }
 
-    .contacts-list {
-        display: block;
-    }
-    
+    .contacts-list,
     .schedule {
         width: 100%;
+        margin-top: -66px;
+        margin-bottom: -16px;
     }
 }
