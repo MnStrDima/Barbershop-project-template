@@ -30,19 +30,20 @@
 }
 
 .our-prices .section-description {
+  position: relative;
+
   @extend %section-description;
   color: $hero-section-description-color;
-  position: relative;
-  padding-left: 80px;
 
   &::before {
+    position: absolute;
+
     content: '';
     display: inline-block;
     width: 60px;
     height: 1px;
-    position: absolute;
     top: 50%;
-    left: 0;
+    left: -80px;
     transform: translateY(-50%);
     background-color: $hero-section-description-color;
   }

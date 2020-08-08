@@ -25,23 +25,24 @@
 
     .section-description {
       @extend %section-description;
+      position: relative;
+
       color: $forth-text-color;
-      display: flex;
-      align-items: center;
 
       margin-bottom: 20px;
-      margin-left: 0px;
 
       &:before {
-        position: static;
         content: '';
-        display: block;
-        width: 60px;
+        position: absolute;
+        left: -80px;
+        top: 50%;
+        display: inline-block;
         height: 1px;
+        width: 60px;
         background-color: $forth-text-color;
-        margin-right: 20px;
       }
     }
+
     .section-title {
       @extend %section-title;
       color: $forth-text-color;
