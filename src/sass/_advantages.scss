@@ -26,10 +26,10 @@
     .section-description {
       @extend %section-description;
       position: relative;
+      left: 80px;
+      margin-bottom: 20px;
 
       color: $forth-text-color;
-
-      margin-bottom: 20px;
 
       &:before {
         content: '';
