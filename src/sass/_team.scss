@@ -18,7 +18,7 @@
       top: 50%;
       left: -80px;
       transform: translateY(-50%);
-      background: rgba(157, 164, 189, 0.6);
+      background: $hero-section-description-color;
     }
   }
 
@@ -31,7 +31,7 @@
 .team-list {
   @extend %list;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     justify-items: center;
     align-items: center;
@@ -40,7 +40,7 @@
 
 .team-item:not(:last-child) {
   margin-bottom: 64px;
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
     margin-bottom: 0;
   }
