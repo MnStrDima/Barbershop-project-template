@@ -8,6 +8,7 @@
   margin: 0 auto;
 
   &.for-hero {
+    position: relative;
     display: block;
     position: relative;
     min-width: 100%;
@@ -46,7 +47,7 @@
     @media screen and (min-width: $max-mobile) {
       height: 680px;
       margin: 0 auto;
-      min-width: 85%;
+      min-width: 80%;
     }
 
     @media screen and (max-width: $min-tablet) {
@@ -92,11 +93,12 @@
           url('../images/Hero/Sliderimg3@2x.jpg');
       }
       padding-left: 24px;
-      min-width: 80%;
+      min-width: 85%;
     }
 
-    @media screen and (min-width: $desktop) {
-      min-width: 85%;
+
+    @media screen and (min-width: 1280px) {
+      min-width: 90%;
       padding-left: 40px;
     }
   }
