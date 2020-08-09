@@ -1,5 +1,4 @@
 .our-prices {
-  padding: 84px 31px;
   background-color: $prices-bg-color;
   background-image: url('../images/Ourprices/bgimage-prices-mobile.png');
   background-position: center;
@@ -11,7 +10,6 @@
   }
 
   @media screen and (min-width: $tablet) {
-    padding: 100px 39px;
     background-image: url('../images/Ourprices/bgimage-prices-tablet.png');
 
     @media screen and (min-resolution: 2dppx) {
@@ -20,7 +18,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    padding: 130px 55px;
     background-image: url('../images/Ourprices/bgimage-prices-desktop.png');
 
     @media screen and (min-resolution: 2dppx) {
@@ -31,6 +28,7 @@
 
 .our-prices .section-description {
   position: relative;
+  left: 80px;
 
   @extend %section-description;
   color: $hero-section-description-color;
@@ -52,7 +50,6 @@
 .our-prices .section-title {
   @extend %section-title;
   color: $third-text-color;
-  margin-top: 20px;
   margin-bottom: 44px;
 }
 
