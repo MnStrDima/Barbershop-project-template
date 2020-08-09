@@ -11,6 +11,7 @@
     display: block;
     position: relative;
     max-width: 1125px;
+
     margin: 0;
     background-image: linear-gradient(
         to right,
@@ -105,22 +106,24 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and(max-width: 767px) {
+    @media screen and (max-width: 480px) {
       align-items: center;
     }
+
+    // @media screen and(max-width: 767px) {
+    // }
   }
 
   @media screen and (min-width: 480px) {
-    max-width: 480px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 768px) {
     padding: 0px 39px;
-    max-width: 768px;
+    max-width: 1200px;
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1200px;
     padding: 0px 15px;
   }
   .page-footer & {

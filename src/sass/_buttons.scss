@@ -19,7 +19,7 @@
   border-radius: 25px;
   cursor: pointer;
   .menu & {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 480px) {
       width: 194px;
       padding: 12px 35px;
     }
