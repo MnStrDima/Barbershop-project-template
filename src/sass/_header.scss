@@ -85,11 +85,11 @@
       color: inherit;
     }
     &:not(:last-child) {
+      @media screen and (max-width: 480px) {
+        margin-bottom: 24px;
+      }
       @media screen and (min-width: 481px) and (max-width: 767px) {
         margin-bottom: 10px;
-      }
-      @media screen and (max-width: 479px) {
-        margin-bottom: 24px;
       }
       // @media screen and (max-width: 767px) {
       //   margin-bottom: 24px;
