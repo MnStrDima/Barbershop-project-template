@@ -19,6 +19,13 @@
       left: -80px;
       transform: translateY(-50%);
       background: rgba(157, 164, 189, 0.6);
+
+      @media screen and (min-width: 768px) {
+        left: 39px;
+      }
+      @media screen and (min-width: 1280px) {
+        left: 15px;
+      }
     }
   }
 
