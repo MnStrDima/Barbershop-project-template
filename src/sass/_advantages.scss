@@ -105,7 +105,7 @@
         margin-right: 30px;
       }
     }
-    @media screen and(max-width: 731px) {
+    @media screen and(min-width: 731px) {
       &:nth-of-type(3) {
         margin-right: 0;
       }
