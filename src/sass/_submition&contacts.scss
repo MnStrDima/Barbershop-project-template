@@ -13,7 +13,7 @@
 
 //Sing-up form
 .signup-form {
-  background-color: #191c26;
+  background-color: $footer-bg-color;
   width: 100%;
   height: 557px;
   padding-left: 31px;
@@ -41,7 +41,7 @@
     border-right: 0;
     border-left: 0;
     border-bottom: 1px ridge $sixth-text-color;
-    background: #191c26;
+    background: $footer-bg-color;
 
     &:hover,
     &:focus {
@@ -106,8 +106,7 @@
   padding-bottom: 84px;
   padding-left: 31px;
   padding-right: 31px;
-
-  background-color: #191c26;
+  background-color: $footer-bg-color;
   background-image: url('../images/contacts.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -261,11 +260,12 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $max-tablet) {
   .container-contacts {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 130px;
   }
 
   .communication-title {
