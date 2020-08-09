@@ -33,13 +33,13 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 30px;
     margin-bottom: 0;
     margin-top: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     width: 50%;
     height: 100%;
@@ -48,17 +48,17 @@
 }
 
 .about-us-item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
 }
 
 .about-us-item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
   }
 }
@@ -66,7 +66,7 @@
 .aboutus-info {
   position: relative;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 50%;
   }
 }
@@ -103,7 +103,7 @@
   letter-spacing: 0.05em;
   color: #303030;
   margin-top: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 42px;
     line-height: 1.16;
   }
@@ -119,11 +119,11 @@
   color: $main-text-color;
   margin-top: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-weight: 700;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 1.66;
   }
@@ -139,11 +139,11 @@
   color: $main-text-color;
   margin-top: 20px;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 40px;
     font-weight: 700;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 20px;
   }
 }

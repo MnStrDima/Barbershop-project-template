@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $mobile) {
       @media screen and (min-device-pixel-ratio: 2),
         screen and (-webkit-min-device-pixel-ratio: 2),
         screen and (-o-min-device-pixel-ratio: 2/1),
@@ -43,13 +43,13 @@
       margin: 0 auto;
     }
 
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: $max-mobile) {
       height: 680px;
       margin: 0 auto;
       min-width: 85%;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $min-tablet) {
       background-image: linear-gradient(
           to right,
           rgba(25, 28, 38, 0.2),
@@ -71,7 +71,7 @@
       }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       background-image: linear-gradient(
           to right,
           rgba(25, 28, 38, 0.2),
@@ -95,7 +95,7 @@
       min-width: 80%;
     }
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: $desktop) {
       min-width: 85%;
       padding-left: 40px;
     }
@@ -107,7 +107,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $mobile) {
       align-items: center;
     }
 
@@ -115,16 +115,16 @@
     // }
   }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     max-width: 768px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 0px 39px;
     max-width: 1200px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding: 0px 15px;
   }
   .page-footer & {
@@ -133,7 +133,7 @@
     justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 56px;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: $mobile) {
       padding-top: 44px;
       padding-bottom: 44px;
     }
