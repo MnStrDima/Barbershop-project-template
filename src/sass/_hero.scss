@@ -96,7 +96,7 @@
   height: 30px;
   display: none;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 481px) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -133,7 +133,6 @@
     color: #ffffff;
   }
 
-
   @media screen and (min-width: 481px) {
     display: flex;
     position: absolute;
@@ -147,7 +146,6 @@
     bottom: 6%;
     right: 9%;
   }
-
 
   @media screen and (min-width: 1280px) {
     position: absolute;

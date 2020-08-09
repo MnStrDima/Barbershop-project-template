@@ -1,14 +1,19 @@
 .about-us {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   width: 100%;
 }
 
 .about-us .container {
   display: flex;
+  justify-content: center;
 }
 
 .text-content {
-  width: 50%;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 50%;
+  }
 }
 
 .about-us-list {
@@ -16,17 +21,18 @@
   list-style: none;
   padding-left: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     display: none;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 481px) {
+    width: 50%;
     margin-right: 30px;
     margin-bottom: 0;
     margin-top: 0;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     width: 50%;
     height: 100%;
@@ -41,11 +47,11 @@
 }
 
 .about-us-item:not(:last-child) {
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 481px) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: 1200px) {
     margin-right: 30px;
   }
 }
@@ -67,17 +73,18 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $forth-text-color;
-  padding-left: 90px;
+  margin-bottom: 0;
 }
 
 .about-us .section-description::before {
-  content: '';
   position: absolute;
-  left: 5px;
-  top: 6px;
-  height: 1px;
-  width: 60px;
+  content: '';
   display: inline-block;
+  width: 60px;
+  height: 1px;
+  top: 50%;
+  left: -80px;
+  transform: translateY(-50%);
   background-color: $forth-text-color;
 }
 
@@ -121,16 +128,17 @@
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.85;
+  line-height: 1.86;
   letter-spacing: 0.02em;
   color: $main-text-color;
   margin-top: 20px;
   width: 100%;
-  @media screen and (min-width: $tablet) {
-    margin-top: 40px;
-    font-weight: 700;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-top: 20px;
-  }
+  margin-bottom: 40px;
+  // @media screen and (min-width: $tablet) {
+  //   margin-top: 40px;
+  //   font-weight: 700;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   margin-top: 20px;
+  // }
 }
