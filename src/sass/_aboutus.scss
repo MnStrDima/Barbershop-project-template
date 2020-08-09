@@ -1,14 +1,11 @@
-.about-us {
-  background-color: #e5e5e5;
-  width: 100%;
-}
-
 .about-us .container {
   display: flex;
 }
 
 .text-content {
-  width: 50%;
+  @media screen and(min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .about-us-list {
@@ -51,14 +48,15 @@
 }
 
 .aboutus-info {
-  position: relative;
-
   @media screen and (min-width: $tablet) {
     width: 50%;
   }
 }
 
+
 .about-us .section-description {
+position: relative;
+  left: 80px;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
@@ -67,17 +65,18 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $forth-text-color;
-  padding-left: 90px;
+  margin-bottom: 20px;
 }
 
 .about-us .section-description::before {
   content: '';
   position: absolute;
-  left: 5px;
-  top: 6px;
+  display: inline-block;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
   height: 1px;
   width: 60px;
-  display: inline-block;
   background-color: $forth-text-color;
 }
 
@@ -86,6 +85,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 28px;
+  margin-bottom: 20px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
@@ -96,6 +96,8 @@
   }
 }
 
+
+
 .about-us .description-text {
   font-family: $main-font-family;
   font-style: normal;
@@ -104,7 +106,7 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
   color: $main-text-color;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     font-weight: 700;
@@ -124,7 +126,7 @@
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: $main-text-color;
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   @media screen and (min-width: $tablet) {
     margin-top: 40px;
