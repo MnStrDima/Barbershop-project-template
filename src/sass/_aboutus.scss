@@ -58,7 +58,7 @@
   }
 }
 
-.section-description {
+.about-us .section-description {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
@@ -70,7 +70,7 @@
   padding-left: 90px;
 }
 
-.section-description::before {
+.about-us .section-description::before {
   content: '';
   position: absolute;
   left: 5px;
@@ -81,7 +81,7 @@
   background-color: $forth-text-color;
 }
 
-.section-title {
+.about-us .section-title {
   font-family: $secondary-font-family;
   font-style: normal;
   font-weight: 900;
@@ -96,7 +96,7 @@
   }
 }
 
-.description-text {
+.about-us .description-text {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 400;
@@ -116,7 +116,7 @@
   }
 }
 
-.description-subtext {
+.about-us .description-subtext {
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 400;
