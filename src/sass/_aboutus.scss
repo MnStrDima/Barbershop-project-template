@@ -1,14 +1,11 @@
-.about-us {
-  background-color: #e5e5e5;
-  width: 100%;
-}
-
 .about-us .container {
   display: flex;
 }
 
 .text-content {
-  width: 50%;
+  @media screen and(min-width: $tablet) {
+    width: 50%;
+  }
 }
 
 .about-us-list {
@@ -20,13 +17,13 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 30px;
     margin-bottom: 0;
     margin-top: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     width: 50%;
     height: 100%;
@@ -35,30 +32,30 @@
 }
 
 .about-us-item {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
 }
 
 .about-us-item:not(:last-child) {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 30px;
   }
 }
 
 .aboutus-info {
-  position: relative;
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 50%;
   }
 }
 
 .section-description {
+  position: relative;
+  left: 80px;
   font-family: $main-font-family;
   font-style: normal;
   font-weight: 600;
@@ -67,17 +64,18 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: $forth-text-color;
-  padding-left: 90px;
+  margin-bottom: 20px;
 }
 
 .section-description::before {
   content: '';
   position: absolute;
-  left: 5px;
-  top: 6px;
+  display: inline-block;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
   height: 1px;
   width: 60px;
-  display: inline-block;
   background-color: $forth-text-color;
 }
 
@@ -86,16 +84,16 @@
   font-style: normal;
   font-weight: 900;
   font-size: 28px;
+  margin-bottom: 20px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
   margin-top: 20px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 42px;
     line-height: 1.16;
   }
 }
-
 .description-text {
   font-family: $main-font-family;
   font-style: normal;
@@ -104,13 +102,13 @@
   line-height: 1.6;
   letter-spacing: 0.02em;
   color: $main-text-color;
-  margin-top: 20px;
+  margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-weight: 700;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 18px;
     line-height: 1.66;
   }
@@ -124,13 +122,13 @@
   line-height: 1.85;
   letter-spacing: 0.02em;
   color: $main-text-color;
-  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-top: 40px;
     font-weight: 700;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-top: 20px;
   }
 }
