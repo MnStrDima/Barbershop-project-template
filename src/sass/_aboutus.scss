@@ -3,29 +3,16 @@
   width: 100%;
 }
 
-// .container{
+.about-us .container {
+  display: flex;
+}
 
-//  @media screen and (min-width: 480px) {
-//    width: 480px;
-//  }
-
-//  @media screen and (min-width: 768px) {
-//    display: flex;
-//    align-items: stretch;
-//    justify-content: center;
-//    width: 768px;
-//    padding-top: 100px;
-//    padding-bottom: 100px;
-//  }
-
-//  @media screen and (min-width: 1200px) {
-//    width: 1200px;
-//    padding-top: 130px;
-//    padding-bottom: 130px;
-//   }
-// }
+.text-content {
+  width: 50%;
+}
 
 .about-us-list {
+  width: 50%;
   list-style: none;
   padding-left: 0;
 
@@ -147,32 +134,3 @@
     margin-top: 20px;
   }
 }
-
-// .button{
-//  display: block;
-//  font-family: $main-font-family;
-//  font-style: normal;
-//  font-weight: 600;
-//  font-size: 12px;
-//  line-height: 1.33;
-//  letter-spacing: 0.09em;
-//  text-transform: uppercase;
-//  text-align: center;
-//  color: $forth-text-color;
-//  padding-top: 12px;
-//  padding-left: 15px;
-//  padding-bottom: 12px;
-//  padding-right: 20px;
-//  width: 160px;
-//  height: 40px;
-//  border: 1px solid #FF6C00;
-//  box-sizing: border-box;
-//  border-radius: 25px;
-//  margin-top: 40px;
-// }
-
-// .button:hover,
-// .button:focus{
-//  color: $third-text-color;
-//  background-color: $accent-color;
-// }
