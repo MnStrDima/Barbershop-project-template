@@ -56,6 +56,7 @@
   }
 }
 .statistics {
+
   @media screen and(min-width: $tablet) and (max-width: $min-desktop) {
     margin-left: auto;
   }
@@ -105,10 +106,10 @@
         margin-right: 30px;
       }
     }
-    @media screen and(max-width: 731px) {
-      &:nth-of-type(3) {
-        margin-right: 0;
-      }
+    @media screen and(min-width: 731px) {
+      // &:nth-of-type(3) {
+      //   margin-right: 0;
+      // }
       &:nth-of-type(1),
       &:nth-of-type(3) {
         margin-bottom: 0;
