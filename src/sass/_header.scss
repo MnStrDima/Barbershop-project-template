@@ -95,7 +95,7 @@
       // @media screen and (max-width: 767px) {
       //   margin-bottom: 24px;
       // }
-      @media screen and (min-width: $tablet) and (max-width: $min-desktop) {
+      @media screen and (min-width: 481px) and (max-width: $min-desktop) {
         margin-top: 20px;
       }
       @media screen and (min-width: $desktop) {
@@ -103,7 +103,7 @@
       }
     }
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 481px) {
     display: flex;
     flex-direction: column-reverse;
     // margin-top: 35px;

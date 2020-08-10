@@ -2,6 +2,18 @@
   background-color: $additional-bg-color;
   color: $forth-text-color;
 
+  .container {
+    padding: 0 31px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 159px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 55px;
+    }
+  }
+
   .section-description {
     position: relative;
     left: 80px;
