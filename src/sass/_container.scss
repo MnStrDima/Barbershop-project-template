@@ -96,7 +96,6 @@
       min-width: 85%;
     }
 
-
     @media screen and (min-width: 1280px) {
       min-width: 90%;
       padding-left: 40px;
@@ -129,7 +128,7 @@
   @media screen and (min-width: $desktop) {
     padding: 0px 15px;
   }
-  
+
   .page-footer & {
     display: flex;
     align-items: center;
@@ -138,6 +137,9 @@
     padding-bottom: 56px;
 
     @media screen and (max-width: $mobile) {
+      display: flex;
+      flex-direction: column-reverse;
+
       padding-top: 44px;
       padding-bottom: 44px;
     }

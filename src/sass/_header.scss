@@ -1,6 +1,5 @@
 /*-- Header --*/
 .page-header {
-
   background-color: transparent;
 
   width: 100%;
@@ -199,14 +198,12 @@
         height: 1px;
         margin-right: 40px;
       }
-
     }
     @media screen and (min-width: $mobile) and (max-width: $mobile) {
       margin-bottom: 79px;
     }
   }
 }
-
 
 /*--Menu--*/
 .menu {
@@ -217,7 +214,6 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
-
 
   @media screen and (max-width: $mobile) {
     position: fixed;
@@ -314,7 +310,6 @@
 
   @media screen and (min-width: $max-mobile) {
     display: none;
-
   }
 }
 .menu-button-inner {
@@ -331,7 +326,6 @@
 
   @media screen and (min-width: $max-mobile) {
     display: none;
-
   }
 }
 
@@ -356,9 +350,9 @@
     }
 
     @media screen and (min-width: 480px) {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
+      // display: flex;
+      // flex-wrap: wrap;
+      // align-items: center;
     }
 
     @media screen and (min-width: 768px) {
