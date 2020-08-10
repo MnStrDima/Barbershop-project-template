@@ -4,10 +4,12 @@
   letter-spacing: 0.2em;
 
   background-color: $additional-bg-color;
+
   .copyright {
     @extend %centred-items;
     flex-shrink: 0;
     color: $secondary-text-color;
+
     &::before {
       content: '';
       display: block;
@@ -19,6 +21,7 @@
       margin-right: 6px;
     }
   }
+
 
   .media-list {
     font-size: 11px;
@@ -47,6 +50,7 @@
         margin-right: 40px;
       }
     }
+    
     @media screen and (min-width: $mobile) and (max-width: $mobile) {
       margin-bottom: 79px;
     }

@@ -129,12 +129,14 @@
   @media screen and (min-width: $desktop) {
     padding: 0px 15px;
   }
+  
   .page-footer & {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 56px;
     padding-bottom: 56px;
+
     @media screen and (max-width: $mobile) {
       padding-top: 44px;
       padding-bottom: 44px;

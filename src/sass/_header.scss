@@ -1,4 +1,6 @@
+/*-- Header --*/
 .page-header {
+
   background-color: transparent;
 
   width: 100%;
@@ -197,6 +199,7 @@
         height: 1px;
         margin-right: 40px;
       }
+
     }
     @media screen and (min-width: $mobile) and (max-width: $mobile) {
       margin-bottom: 79px;
@@ -204,16 +207,17 @@
   }
 }
 
+
 /*--Menu--*/
 .menu {
   color: $third-text-color;
   transition: opacity 250ms linear;
   width: 100%;
-
   display: block;
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+
 
   @media screen and (max-width: $mobile) {
     position: fixed;
@@ -303,12 +307,14 @@
   &.is-open .menu-open {
     display: none;
   }
+
   .menu-open {
     display: block;
   }
 
   @media screen and (min-width: $max-mobile) {
     display: none;
+
   }
 }
 .menu-button-inner {
@@ -325,5 +331,65 @@
 
   @media screen and (min-width: $max-mobile) {
     display: none;
+
+  }
+}
+
+/* -- Menu Media List --*/
+.media-list {
+  @extend %list;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+
+  .page-header & {
+    &:before {
+      content: '';
+      display: block;
+      background-color: $forth-text-color;
+      width: 60px;
+      height: 1px;
+      margin-right: 40px;
+      @media screen and (max-width: 479px) {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    .media-item {
+      a {
+        color: inherit;
+      }
+
+      @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+      }
+      &:last-child {
+        @media screen and (max-width: 768px) {
+          margin-top: 24px;
+        }
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+          margin-left: 100px;
+        }
+      }
+    }
+  }
+}
+
+.page-header {
+  .media-item:hover,
+  .media-item:focus {
+    color: $accent-color;
   }
 }
