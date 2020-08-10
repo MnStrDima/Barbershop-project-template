@@ -1,0 +1,144 @@
+.about-us {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.about-us .container {
+  display: flex;
+  justify-content: center;
+}
+
+.text-content {
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 50%;
+  }
+}
+
+.about-us-list {
+  width: 50%;
+  list-style: none;
+  padding-left: 0;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 50%;
+    margin-right: 30px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-right: 64px;
+  }
+}
+
+.about-us-item {
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.about-us-item:not(:last-child) {
+  @media screen and (min-width: 481px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+.aboutus-info {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.about-us .section-description {
+  position: relative;
+  left: 80px;
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: $forth-text-color;
+  margin-bottom: 0;
+}
+
+.about-us .section-description::before {
+  position: absolute;
+  display: inline-block;
+  left: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 60px;
+  background-color: $forth-text-color;
+}
+
+.about-us .section-title {
+  font-family: $secondary-font-family;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #303030;
+  margin-top: 20px;
+  @media screen and (min-width: $desktop) {
+    font-size: 42px;
+    line-height: 1.16;
+  }
+}
+
+.about-us .description-text {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+
+.about-us .description-subtext {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+  // @media screen and (min-width: $tablet) {
+  //   margin-top: 40px;
+  //   font-weight: 700;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   margin-top: 20px;
+  // }
+}

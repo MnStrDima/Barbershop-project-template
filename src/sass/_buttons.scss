@@ -20,13 +20,19 @@
   cursor: pointer;
 
   .menu & {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: $mobile) {
       width: 194px;
       padding: 12px 35px;
     }
   }
   &.light {
     color: $forth-text-color;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $third-text-color;
+    }
   }
   &:hover,
   &:focus {

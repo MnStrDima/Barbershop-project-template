@@ -1,4 +1,3 @@
-/*-- Page Footer --*/
 .page-footer {
   font-size: 11px;
   line-height: 1.36;
@@ -22,18 +21,27 @@
       margin-right: 6px;
     }
   }
-  /*-- Foter Media list --*/
+
+
   .media-list {
     font-size: 11px;
-    display: flex;
-    align-items: center;
-
     a {
       color: $forth-text-color;
     }
 
+    display: flex;
+    align-items: center;
+
+    @media screen and(max-width: $min-mobile) {
+      flex-wrap: wrap;
+      margin-left: 20px;
+    }
+
+    .media-item:not(:last-child) {
+      margin-right: 40px;
+    }
     &:before {
-      @media screen and(min-width: 480px) {
+      @media screen and(min-width: $mobile) {
         content: '';
         display: block;
         background-color: $forth-text-color;
@@ -42,17 +50,9 @@
         margin-right: 40px;
       }
     }
-
-    @media screen and(max-width: 479px) {
-      flex-wrap: wrap;
-      margin-left: 20px;
-    }
-
-    @media screen and (min-width: 480px) and (max-width: 480px) {
+    
+    @media screen and (min-width: $mobile) and (max-width: $mobile) {
       margin-bottom: 79px;
-    }
-    .media-item:not(:last-child) {
-      margin-right: 40px;
     }
   }
 }

@@ -1,0 +1,130 @@
+.our-prices {
+  background-color: $prices-bg-color;
+  background-image: url('../images/Ourprices/bgimage-prices-mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-resolution: 2dppx) {
+    background-image: url('../images/Ourprices/bgimage-prices-mobile@2x.png');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url('../images/Ourprices/bgimage-prices-tablet.png');
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/Ourprices/bgimage-prices-tablet@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/Ourprices/bgimage-prices-desktop.png');
+
+    @media screen and (min-resolution: 2dppx) {
+      background-image: url('../images/Ourprices/bgimage-prices-desktop@2x.png');
+    }
+  }
+}
+
+.our-prices .section-description {
+  position: relative;
+  left: 80px;
+
+  @extend %section-description;
+  color: $hero-section-description-color;
+
+  &::before {
+    position: absolute;
+
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    top: 50%;
+    left: -80px;
+    transform: translateY(-50%);
+    background-color: $hero-section-description-color;
+  }
+}
+
+.our-prices .section-title {
+  @extend %section-title;
+  color: $third-text-color;
+  margin-bottom: 44px;
+}
+
+.pricelist {
+  background: $prices-list-bg-color;
+}
+
+.pricelist-first {
+  @extend %list;
+  padding: 30px 30px 0 30px;
+
+  & .pricelist-item {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 40px 0 40px;
+  }
+}
+
+.pricelist-second {
+  @extend %list;
+  padding: 0 30px 30px 30px;
+
+  & .pricelist-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 40px 30px 40px;
+  }
+}
+
+.pricelist-item {
+  display: flex;
+  align-items: baseline;
+
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
+
+.pricelist-line {
+  flex-grow: 1;
+  height: 1px;
+  margin: 0 6px;
+  background-color: rgba(157, 164, 189, 0.12);
+  transform: translateY(3px);
+}
+
+.pricelist-button {
+  margin-top: 50px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: $desktop) {
+  .pricelist {
+    display: flex;
+  }
+
+  .pricelist-first,
+  .pricelist-second {
+    padding: 30px 40px;
+    width: 585px;
+  }
+  .pricelist-second {
+    background: $prices-list-additional-bg-color;
+  }
+}

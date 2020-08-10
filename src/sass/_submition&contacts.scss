@@ -1,0 +1,287 @@
+.contacts {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+//Sing-up form
+.signup-form {
+  background-color: $footer-bg-color;
+  width: 100%;
+  padding-bottom: 18%;
+  padding-left: 6%;
+  padding-right: 6%;
+
+  .signup-title {
+    padding-top: 84px;
+    margin-bottom: 44px;
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $third-text-color;
+  }
+  .form-input {
+    width: 100%;
+    margin-bottom: 44px;
+    padding-bottom: 8px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px ridge $sixth-text-color;
+    background: $footer-bg-color;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      border-top: 0;
+      border-right: 0;
+      border-bottom: 1px ridge $main-bg-color;
+      outline: none;
+      color: $third-text-color;
+    }
+  }
+
+  .button {
+    margin-top: 44px;
+    display: block;
+    margin: 0 auto;
+
+    &:focus,
+    &:hover {
+      background: $accent-color;
+    }
+  }
+}
+
+.form-input {
+  &::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $sixth-text-color;
+  }
+
+  &.user-comment {
+    resize: none;
+  }
+}
+
+.form-input:focus,
+.form-input:hover {
+  &::placeholder {
+    color: $third-text-color;
+  }
+}
+
+.form-input {
+  &:not(:focus) {
+    &:not(:placeholder-shown) {
+      color: $third-text-color;
+    }
+  }
+}
+
+//Contacts
+.communication {
+  width: 100%;
+  padding-bottom: 18%;
+  padding-left: 6%;
+  padding-right: 6%;
+
+  background-color: #191c26;
+  background-image: url('../images/contacts.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &-title {
+    padding-top: 84px;
+    margin-bottom: 40px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $third-text-color;
+  }
+
+  .contacts-list {
+    margin-top: 0;
+    margin-bottom: 44px;
+    padding-left: 0;
+
+    &-item {
+      display: block;
+      margin-bottom: 20px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.7;
+      letter-spacing: 0.02em;
+      color: $secondary-text-color;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+.contacts-list-item {
+  a {
+    color: $secondary-text-color;
+
+    &.email {
+      text-decoration: underline;
+    }
+
+    &:focus,
+    &:hover {
+      color: $third-text-color;
+      --color1: white;
+    }
+  }
+
+  .icon {
+    position: relative;
+    top: 5px;
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+  }
+
+  .address-block {
+    font-style: normal;
+  }
+}
+
+.schedule {
+  &-title {
+    display: inline-block;
+    position: relative;
+    left: 75px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $third-text-color;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -75px;
+      top: 50%;
+      display: inline-block;
+      height: 1px;
+      width: 60px;
+      background-color: $hero-section-description-color;
+    }
+  }
+
+  &-details {
+    margin-top: 20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+
+    color: $secondary-text-color;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .signup-form {
+    padding-bottom: 13%;
+
+    .signup-title {
+      text-align: left;
+    }
+  }
+
+  .subscription-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .form-input {
+      width: calc(50% - 15px);
+
+      &.user-comment {
+        width: 100%;
+      }
+    }
+
+    .button {
+      margin: 0;
+    }
+  }
+  .communication {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 13%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    &-title {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  .contacts-list {
+    margin-bottom: -25px;
+    margin-right: 30px;
+  }
+
+  .schedule {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .communication-title {
+    padding-bottom: 0;
+    height: 0;
+  }
+
+  .signup-form,
+  .communication {
+    width: 50%;
+    height: 644px;
+    padding-bottom: 10%;
+    padding-left: 7%;
+    padding-right: 3%;
+  }
+
+  .contacts-list {
+    margin-bottom: 70px;
+  }
+
+  .contacts-list,
+  .schedule {
+    width: 100%;
+    margin-top: 0;
+  }
+}
