@@ -34,23 +34,23 @@
 
     @media screen and(max-width: $min-mobile) {
       flex-wrap: wrap;
-      // margin-left: 20px;
-      margin-left: auto;
-      margin-bottom: 20px;
+      margin-left: 20px;
+      // margin-left: auto;
+      // margin-bottom: 20px;
     }
 
     .media-item:not(:last-child) {
       margin-right: 40px;
     }
     &:before {
-      // @media screen and(min-width: $mobile) {
-      content: '';
-      display: block;
-      background-color: $forth-text-color;
-      width: 60px;
-      height: 1px;
-      margin-right: 40px;
-      // }
+      @media screen and(min-width: $mobile) {
+        content: '';
+        display: block;
+        background-color: $forth-text-color;
+        width: 60px;
+        height: 1px;
+        margin-right: 40px;
+      }
     }
 
     @media screen and (min-width: $mobile) and (max-width: $mobile) {
